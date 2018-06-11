@@ -525,13 +525,13 @@ class PageTranslationHooks {
 	 * Hook: getUserPermissionsErrorsExpensive
 	 */
 	public static function preventUnknownTranslations( Title $title, User $user, $action, &$result ) {
-		$handle = new MessageHandle( $title );
+		/*$handle = new MessageHandle( $title );
 		if ( $handle->isPageTranslation() && $action === 'edit' ) {
 			if ( !$handle->isValid() ) {
 				$result = array( 'tpt-unknown-page' );
 				return false;
 			}
-		}
+		}*/
 		return true;
 	}
 
