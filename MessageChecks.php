@@ -317,7 +317,7 @@ class MessageChecker {
 			$counts = array(
 				'{' => 0, '}' => 0,
 				'[' => 0, ']' => 0,
-				'(' => 0, ')' => 0,
+				// '(' => 0, ')' => 0,
 			);
 
 			$len = strlen( $translation );
@@ -334,11 +334,11 @@ class MessageChecker {
 			if ( $counts['{'] !== $counts['}'] ) {
 				$balance[] = '{}: ' . ( $counts['{'] - $counts['}'] );
 			}
-
+			/*
 			if ( $counts['('] !== $counts[')'] ) {
 				$balance[] = '(): ' . ( $counts['('] - $counts[')'] );
 			}
-
+			*/
 			if ( count( $balance ) ) {
 				$warnings[$key][] = array(
 					array( 'balance', $subcheck, $key, $code ),
