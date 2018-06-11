@@ -254,7 +254,7 @@ class SpecialTranslate extends SpecialPage {
 		/* str  */ 'language' => $this->getLanguage()->getCode(),
 		/* str  */ 'group'    => '',
 		/* str  */ 'offset'   => '', // Used to be int, now str
-		/* int  */ 'limit'    => 100,
+		/* int  */ 'limit'    => 1000,
 		/* str  */ 'filter'   => '', // Tux
 		);
 
